@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Recrutamento Online</title>
+        <meta charset="UTF-8">
+    </head>    
+    <body>
+        <header>
+            <h1>Recrutamento Online</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Cadastre seu currículo</h2>
+                <form acrtion="#" method="get">
+                    <p> Preencha o formulário para se candidatar á vaga</p>
+                    <fieldset>
+                       <legend>Dados Pessoais</legend>
+                       <div>
+                           <label for="nome_id">Nome completo</label>
+                           <input id="nome_id" 
+                                  name="nome" 
+                                  type="text">
+                       </div>
+                       <div>
+                           <label for="telefone_id">Telefeno:</label>
+                           <input id="telefone_id" 
+                                  name="telefone" 
+                                  type="tel">
+                       </div>
+                       <div>
+                           <label for="email_id">Email:</label>
+                           <input id="email_id" 
+                                  name="email_id" 
+                                  type="email">
+                       </div>
+                       <div>
+                           <label for="data_nasc">Data de nascimento:</label>
+                           <input id="data_nasc_id" 
+                                  name="data_nasc" 
+                                  type="date">
+                       </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Endereço</legend>
+                        <div>
+                            <label for="Logradoro_id">Logradoura:</label>
+                            <input id="Logradoro_id" 
+                                   name="Logradoro" 
+                                   type="text">
+                        </div>
+                        <div>
+                            <label for="cidade_id">Cidade:</label>
+                            <input id="cidade_id" 
+                                   name="cidade" 
+                                   type="text">    
+                        </div>
+                        <div>
+                            <label for="numero_id">Numero:</label>
+                            <input id="numero_id" 
+                                   name="numero" 
+                                   type="number">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div>
+                            <label for="resumo_id">Fale sobre você</label>
+                            <textarea id="resumo_id" 
+                                      name="resumo_id" 
+                                      rows="10" 
+                                      cols="50"></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Nível pretendido</legend>
+                        <div>
+                            <input id="estagiario_id" 
+                                   name="nível"
+                                   type="radio"
+                                   value="estagiario">
+                            <label for="estagiario_id">Estagiário</label>
+                        </div>
+                        <div>
+                            <input id="junior_id" 
+                                   name="nível"
+                                   type="radio"
+                                   value="junior">
+                            <label for="junior_id">Junior</label>
+                        </div>
+                        <div>
+                            <input id="pleno_id" 
+                                   name="nível"
+                                   type="radio"
+                                   value="pleno">
+                            <label for="pleno_id">Pleno</label>
+                        </div>
+                        <div>
+                            <input id="senior_id" 
+                                   name="nível"
+                                   type="radio"
+                                   value="senior">
+                            <label for="senior_id">Senior</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Tecnologias</legend>
+                        <div>
+                            <input id="tec_html_id"
+                                   name="Tecnologia"
+                                   type="checkbox"
+                                   value="html">
+                            <label for="tec_html_id">HTML</label>
+                        </div>
+                        <div>
+                            <input id="tec_css_id"
+                                   name="Tecnologia"
+                                   type="checkbox"
+                                   value="css">
+                            <label for="tec_css_id">CSS</label>
+                        </div>
+                        <div>
+                            <input id="tec_java_id" 
+                                   name="nível"
+                                   type="checkbox"
+                                   value="java">
+                            <label for="tec_java_id">JAVA</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Grau de instrução</legend>
+                        <div>
+                            <label for="escolaridade_id">Escolaridade:</label>
+                            <select id="escolaridade_id" name="escolaridade">
+                                <option valeu="medio">Ensino Médio</option>
+                                <option value="graduacao">Graduação</option>
+                                <option value="Pos">Pós-Graduação</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <div>
+                        <button type="reset">Limpar dados</button>
+                        <button type="submit">Enviar dados</button>
+                    </div>
+                </form>
+            </section>    
+        </main>
+        <footer>
+            <p>Todos os direitos reservados</p>
+        </footer>
+    </body>
+</html>
