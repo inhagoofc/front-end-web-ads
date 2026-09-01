@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title> REDE SOCIAL </title>
+    </head>
+
+    <hr>
+    <body>
+        <header id="Imagem">
+            <h1>PUBLICAÇÕES</h1>
+        </header>
+    </body>
+    <hr>
+
+    <main id="conteudo de foto">
+        <section>
+            <p>
+                FOTO DE PERFIL
+            </p>
+            <p>
+            <img src="./fotoperfil.webp" alt="Foto de perfil" width="100">
+            </p>
+        </section>
+    </main>
+    <hr>
+
+    <h1>Selecionar a Foto para ser postada</h1>
+                <form  action="https://postman-echo.com/post" method="post" enctype="multipart/form-data">
+                    <p> Selecione a foto.</p>
+                    <fieldset>
+                       <legend>Foto</legend>
+                       <div>
+                        <label for="foto_id">Foto:</label>
+                        <input id="foto_id" 
+                               name="foto" 
+                               type="file" 
+                               accept="image/*">
+                       </div>
+                       <div>
+                            <label for="resumo_id">Descrição</label>
+                            <textarea id="resumo_id" 
+                                      name="resumo_id" 
+                                      required
+                                      placeholder="Descrição da foto"
+                                      rows="1" 
+                                      cols="50"></textarea>
+                        </div>
+                    </fieldset>
+                </form>
+    <hr>
+
+    <h2>Configurações da Foto</h2>
+                        <div>
+                           <label for="data_nasc">Data De Postagem:</label>
+                           <input id="data_nasc_id" 
+                                  name="data_nasc" 
+                                  type="date">
+                       </div>
+                       <div>
+                           <label for="time">Horario da postagem:</label>
+                           <input id="time" 
+                                  name="Horario" 
+                                  type="time">
+                       </div>
+                       <fieldset>
+                        <legend>Tipo do arquivo</legend>
+                        <div>
+                            <input id="plublico_id" 
+                                   name="tipo"
+                                   type="radio"
+                                   value="Publico">
+                            <label for="publico_id">Publico</label>
+                        </div>
+                        <div>
+                            <input id="Privado_id" 
+                                   name="tipo"
+                                   type="radio"
+                                   value="Privado">
+                            <label for="Privado_id">Privado</label>
+                        </div>
+                        <div>
+                            <input id="SuperAmigo_id" 
+                                   name="tipo"
+                                   type="radio"
+                                   value=SuperAmigo">
+                            <label for="SuperAmigo_id">SuperAmigo</label>
+                        </div>
+                    </fieldset>
+
+</html>
