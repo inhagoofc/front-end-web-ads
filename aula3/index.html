@@ -6,32 +6,47 @@
     </head>    
     <body>
         <header>
-            <h1>Recrutamento Online</h1>
+            <h1>Recrutamento Online para MAIOR empresa gato de todas</h1>
         </header>
         <main>
             <section>
-                <h2>Cadastre seu currículo</h2>
-                <form acrtion="#" method="get">
-                    <p> Preencha o formulário para se candidatar á vaga</p>
+                <h2>Cadastre seu currículo abaixo</h2>
+                <!-- Prenchimento o action e o method -->
+                <form  action="https://postman-echo.com/post" method="post" enctype="multipart/form-data">
+                    <p> Preencha o formulário para se candidatar á vagan da nossa empresa G@to.NET</p>
                     <fieldset>
                        <legend>Dados Pessoais</legend>
+                       <!-- Campo novo de foto -->
                        <div>
-                           <label for="nome_id">Nome completo</label>
+                        <label for="foto_id">Foto:</label>
+                        <input id="foto_id" 
+                               name="foto" 
+                               type="file" 
+                               accept="image/*">
+                       </div>
+                       <!-- Adicionar placeholder -->
+                       <div>
+                           <label for="nome_id">Nome completo:</label>
                            <input id="nome_id" 
                                   name="nome" 
-                                  type="text">
+                                  type="text"
+                                  placeholder="Fulano Sobrenome ">
                        </div>
+                       <!-- Adicionar required -->
                        <div>
                            <label for="telefone_id">Telefeno:</label>
                            <input id="telefone_id" 
                                   name="telefone" 
-                                  type="tel">
+                                  type="tel"
+                                  placeholder="(XX) X XXXX-XXXX"
+                                  required>
                        </div>
                        <div>
                            <label for="email_id">Email:</label>
                            <input id="email_id" 
                                   name="email_id" 
-                                  type="email">
+                                  type="email"
+                                  placeholder="XXXXXXXX@XXXXX.com">
                        </div>
                        <div>
                            <label for="data_nasc">Data de nascimento:</label>
@@ -46,19 +61,22 @@
                             <label for="Logradoro_id">Logradoura:</label>
                             <input id="Logradoro_id" 
                                    name="Logradoro" 
-                                   type="text">
+                                   type="text"
+                                   placeholder="XXXXX">
                         </div>
                         <div>
                             <label for="cidade_id">Cidade:</label>
                             <input id="cidade_id" 
                                    name="cidade" 
-                                   type="text">    
+                                   type="text"
+                                   placeholder="Cidade atual">    
                         </div>
                         <div>
                             <label for="numero_id">Numero:</label>
                             <input id="numero_id" 
                                    name="numero" 
-                                   type="number">
+                                   type="number"
+                                   placeholder="XXX">
                         </div>
                     </fieldset>
                     <fieldset>
@@ -144,7 +162,7 @@
             </section>    
         </main>
         <footer>
-            <p>Todos os direitos reservados</p>
+            <p>Todos os direitos que estiverem aqui são reservados</p>
         </footer>
     </body>
 </html>
