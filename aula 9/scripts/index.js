@@ -1,3 +1,9 @@
+document.querySelectorAll(".card").forEach((card) => {
+    if (localStorage.getcard(card.id)) {
+       card.classList.add("marcado");        
+    }
+});
+
 function marcar(id, nome) {
     const card = document.querySelector(`#${id}`);
     card.classList.toggle("marcado");
