@@ -1,5 +1,5 @@
 document.querySelectorAll(".card").forEach((card) => {
-    if (localStorage.getcard(card.id)) {
+    if (localStorage.getItem(card.id)) {
        card.classList.add("marcado");        
     }
 });
