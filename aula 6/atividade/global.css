@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #c4302b; /* Tom inspirados no YouTube */
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    opacity: 0.8;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+section {
+    background-color: #e5e5e5;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ffffff;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+/* Estilo dos itens do Flex */
+.container-flex {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.container-flex .item {
+    color: white;
+    background-color: #c4302b;
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.3rem;
+    font-weight: bold;
+}
+
+/* Estilo do Grid para a galeria de vídeos */
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas para os vídeos */
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.card-video {
+    background-color: white;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    padding-bottom: 0.5rem;
+}
+
+.thumb {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    background-color: #333; /* Fundo caso a imagem demore ou não exista */
+}
+
+.card-video .item {
+    color: #333;
+    background-color: transparent;
+    font-weight: bold;
+    padding: 0.5rem;
+}
