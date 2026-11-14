@@ -1,4 +1,4 @@
-document.querySelectorAll(".card").forEach((card) => {
+document.querySelectorAll(".cards").forEach((card) => {
     if (localStorage.getItem(card.id)) {
        card.classList.add("marcado");        
     }
