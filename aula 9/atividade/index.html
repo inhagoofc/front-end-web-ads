@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Projetos de Vídeo - Atividade 9</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gerenciador de Projetos de Vídeo</h1>
+        <p>Adicione, liste e gerencie seus projetos de edição em tempo real</p>
+    </header>
+
+    <main>
+        <!-- Formulário para adicionar novo projeto -->
+        <section class="card-secao">
+            <h2>Novo Projeto</h2>
+            <form id="form-projeto">
+                <div class="campo">
+                    <label for="titulo">Título do Vídeo *</label>
+                    <input type="text" id="titulo" placeholder="Ex: Guia de Personagem" required>
+                </div>
+                <div class="campo">
+                    <label for="categoria">Categoria *</label>
+                    <select id="categoria" required>
+                        <option value="">Selecione...</option>
+                        <option value="Gameplay">Gameplay</option>
+                        <option value="Tutorial">Tutorial</option>
+                        <option value="Shorts">Shorts / TikTok</option>
+                        <option value="Vlog">Vlog</option>
+                    </select>
+                </div>
+                <button type="submit" id="btn-adicionar">Adicionar Projeto</button>
+            </form>
+        </section>
+
+        <!-- Lista de projetos cadastrados dinamicamente -->
+        <section class="card-secao">
+            <h2>Projetos na Fila de Edição</h2>
+            <ul id="lista-projetos">
+                <!-- Os itens serão inseridos aqui via JavaScript -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Atividade Aula 9 - Manipulação do DOM e Eventos</p>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
