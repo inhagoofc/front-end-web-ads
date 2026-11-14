@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Briefing de Edição de Vídeo - Cadastro</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Solicitação de Edição & Produção</h1>
+        <p>Preencha o briefing abaixo para cadastrar seu projeto de vídeo</p>
+    </header>
+
+    <main>
+        <form id="form-edicao" novalidate>
+            <!-- Campo 1 -->
+            <div class="campo">
+                <label for="nome">1. Nome Completo / Criador *</label>
+                <input type="text" id="nome" name="nome" placeholder="Ex: Ana Silva">
+                <span class="erro" id="erro-nome"></span>
+            </div>
+
+            <!-- Campo 2 -->
+            <div class="campo">
+                <label for="canal">2. Nome do Canal / Perfil *</label>
+                <input type="text" id="canal" name="canal" placeholder="Ex: @CanalDaAna">
+                <span class="erro" id="erro-canal"></span>
+            </div>
+
+            <!-- Campo 3 -->
+            <div class="campo">
+                <label for="email">3. E-mail de Contato *</label>
+                <input type="email" id="email" name="email" placeholder="contato@email.com">
+                <span class="erro" id="erro-email"></span>
+            </div>
+
+            <!-- Campo 4 (Com Máscara) -->
+            <div class="campo">
+                <label for="telefone">4. WhatsApp / Telefone (Com Máscara) *</label>
+                <input type="text" id="telefone" name="telefone" placeholder="(11) 99999-9999" maxlength="15">
+                <span class="erro" id="erro-telefone"></span>
+            </div>
+
+            <!-- Campo 5 (Com Máscara) -->
+            <div class="campo">
+                <label for="cpf">5. CPF para Nota Fiscal (Com Máscara) *</label>
+                <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" maxlength="14">
+                <span class="erro" id="erro-cpf"></span>
+            </div>
+
+            <!-- Campo 6 -->
+            <div class="campo">
+                <label for="tipoVideo">6. Formato do Vídeo *</label>
+                <select id="tipoVideo" name="tipoVideo">
+                    <option value="">Selecione o formato...</option>
+                    <option value="youtube-longo">Vídeo Longo (YouTube 16:9)</option>
+                    <option value="shorts-tiktok">Shorts / Reels / TikTok (9:16)</option>
+                    <option value="gameplay">Gameplay / Corte de Live</option>
+                    <option value="vlog">Vlog / Lifestyle</option>
+                </select>
+                <span class="erro" id="erro-tipoVideo"></span>
+            </div>
+
+            <!-- Campo 7 -->
+            <div class="campo">
+                <label for="duracao">7. Duração Estimada (minutos) *</label>
+                <input type="number" id="duracao" name="duracao" min="1" max="180" placeholder="Ex: 12">
+                <span class="erro" id="erro-duracao"></span>
+            </div>
+
+            <!-- Campo 8 -->
+            <div class="campo">
+                <label for="prazo">8. Prazo Desejado de Entrega *</label>
+                <input type="date" id="prazo" name="prazo">
+                <span class="erro" id="erro-prazo"></span>
+            </div>
+
+            <!-- Campo 9 -->
+            <div class="campo">
+                <label for="linkBrutos">9. Link dos Arquivos Brutos (Drive/Mega) *</label>
+                <input type="url" id="linkBrutos" name="linkBrutos" placeholder="https://drive.google.com/...">
+                <span class="erro" id="erro-linkBrutos"></span>
+            </div>
+
+            <!-- Campo 10 -->
+            <div class="campo">
+                <label for="detalhes">10. Estilo de Edição e Referências *</label>
+                <textarea id="detalhes" name="detalhes" rows="4" placeholder="Descreva cortes dinâmicos, legendas, trilha sonora, memes..."></textarea>
+                <span class="erro" id="erro-detalhes"></span>
+            </div>
+
+            <button type="submit" id="btn-enviar">Enviar Briefing</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Atividade Aula 8 - Formulário Validado</p>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
