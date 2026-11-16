@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Vídeos - Primeiro JS</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>StreamPurple - Plataforma de Vídeos</h1>
+        <p>Explorando os primeiros passos com JavaScript</p>
+    </header>
+
+    <main>
+        <section class="player-container">
+            <h2 id="titulo-video">Guia Completo de Edição e Cortes Dinâmicos</h2>
+            
+            
+            <div class="tela-video" id="tela-video">
+                <p id="status-player">⏸ Vídeo Pausado</p>
+            </div>
+
+            
+            <div class="controles">
+                <button id="btn-play">▶ Reproduzir / Pausar</button>
+                <button id="btn-like">👍 Curtir (<span id="contador-likes">0</span>)</button>
+                <button id="btn-inscrever">🔔 Inscrever-se</button>
+            </div>
+
+            <p class="descricao" id="mensagem-feedback">Clique nos botões acima para interagir com o vídeo!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Atividade Aula 7 - Introdução ao JavaScript</p>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2b233d; 
+    color: #f4f4f4;
+    padding: 2rem 1rem;
+    line-height: 1.5;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    color: #ff6b6b;
+    font-size: 1.9rem;
+    margin-bottom: 0.4rem;
+}
+
+header p {
+    color: #d1c9e8;
+    font-size: 0.95rem;
+}
+
+main {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.player-container {
+    background-color: #f7f5fa;
+    color: #2b233d;
+    padding: 1.5rem;
+    border-radius: 0.6rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.player-container h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #3a2e54;
+}
+
+.tela-video {
+    width: 100%;
+    height: 220px;
+    background-color: #1e182b;
+    border-radius: 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.2rem;
+    border: 2px solid #8c52ff;
+    transition: background-color 0.3s;
+}
+
+.tela-video.tocando {
+    background-color: #3d2c63;
+}
+
+#status-player {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.controles {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: 0.7rem 1.2rem;
+    background-color: #8c52ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #723bc4;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+button.inscrito {
+    background-color: #2e8b57;
+}
+
+.descricao {
+    font-size: 0.9rem;
+    color: #554875;
+    background-color: #ece6f7;
+    padding: 0.6rem;
+    border-radius: 0.3rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    color: #d1c9e8;
+    font-size: 0.85rem;
+}
